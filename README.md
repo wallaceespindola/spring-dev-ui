@@ -1,4 +1,4 @@
-![Spring](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1200px-Spring_Framework_Logo_2018.svg.png)
+![Spring](resources/images/spring-logo.png)
 
 # Spring project based having a spring-dev-ui
 
@@ -32,6 +32,10 @@ mvn spring-boot:run
 # UI: http://localhost:9090
 ```
 
+![Admin Server Home](resources/images/my-services-home.png)
+![Memory Metrics](resources/images/my-services-memory.png)
+![Wallboard View](resources/images/my-services-wallboard.png)
+
 ### 2) Start your service (dev profile)
 In another terminal:
 ```bash
@@ -40,6 +44,16 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 # Actuator: http://localhost:8080/actuator
 # Swagger UI: http://localhost:8080/swagger-ui
 ```
+
+#### Swagger UI: 
+http://localhost:8080/swagger-ui
+
+![Swagger Documentation](resources/images/swagger-docs.png)
+
+#### Actuator: 
+http://localhost:8080/actuator
+
+![Actuator Endpoints](resources/images/actuator.png)
 
 Your service will automatically register in the Admin UI.
 From the Admin dashboard you can inspect health, env/config, beans, mappings, caches, scheduled tasks, metrics, and change log levels at runtime.
