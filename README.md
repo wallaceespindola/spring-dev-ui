@@ -29,8 +29,9 @@ Two Spring Boot projects to emulate a Quarkus Dev UI experience using **Actuator
 ```bash
 cd admin-server
 mvn spring-boot:run
-# UI: http://localhost:9090
 ```
+#### Admin Server UI: 
+http://localhost:9090
 
 ![Admin Server Home](resources/images/my-services-home.png)
 ![Memory Metrics](resources/images/my-services-memory.png)
@@ -41,8 +42,6 @@ In another terminal:
 ```bash
 cd my-service
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
-# Actuator: http://localhost:8080/actuator
-# Swagger UI: http://localhost:8080/swagger-ui
 ```
 
 #### Swagger UI: 
