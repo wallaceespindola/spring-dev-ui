@@ -20,7 +20,7 @@ Two Spring Boot projects to emulate a Quarkus Dev UI experience using **Actuator
 - `my-service` — your app exposing Actuator & registering with the Admin UI (runs on port 8080).
 
 ## Requirements
-- Java 17+
+- Java 21+
 - Maven 3.9+
 
 ## How to run
