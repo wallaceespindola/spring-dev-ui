@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarkus Service - Development UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 50%, #ff9ff3 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .link-card {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            padding: 1.5rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .link-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .dev-link {
+            background: linear-gradient(135deg, #4ecdc4, #26d0ce);
+        }
+
+        .health-link {
+            background: linear-gradient(135deg, #96ceb4, #27ae60);
+        }
+
+        .api-link {
+            background: linear-gradient(135deg, #45b7d1, #2980b9);
+        }
+
+        .admin-link {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .status {
+            background: linear-gradient(135deg, #feca57, #ff9ff3);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Q</div>
+        <h1>Quarkus Service</h1>
+        <p class="subtitle">Cloud-native Java framework with RESTEasy Reactive</p>
+
+        <div class="status">
+            🚀 Service is running on port 8081
+        </div>
+
+        <div class="links-grid">
+            <a href="/hello" class="link-card api-link">
+                <div class="link-title">👋 Hello API</div>
+                <div class="link-description">Quarkus RESTEasy endpoint</div>
+            </a>
+
+            <a href="/q/dev/" class="link-card dev-link">
+                <div class="link-title">🛠️ Quarkus Dev UI</div>
+                <div class="link-description">Development interface</div>
+            </a>
+
+            <a href="/q/health" class="link-card health-link">
+                <div class="link-title">💚 Health Check</div>
+                <div class="link-description">Application health status</div>
+            </a>
+
+            <a href="/q/metrics" class="link-card health-link">
+                <div class="link-title">📊 Metrics</div>
+                <div class="link-description">Application metrics</div>
+            </a>
+
+            <a href="/q/openapi" class="link-card api-link">
+                <div class="link-title">📋 OpenAPI Spec</div>
+                <div class="link-description">API specification</div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Quarkus 3.15.1 • Java 21 • Port 8081</p>
+            <p>Multi-Framework Development UI Demo</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -28,7 +28,6 @@ replay_pid*
 /build/
 
 # Maven wrapper
-.mvn/
 
 # IDE files
 .idea/
@@ -57,3 +56,6 @@ coverage/
 
 # General cache
 .cache/
+
+# Maven wrapper
+.mvn/

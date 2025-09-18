@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: Spring Boot Service
+    description: RESTful service with Actuator endpoints and Swagger documentation
+    version: 1.0.0
+    author: Wallace Espindola
+  framework:
+    name: Spring Boot
+    version: 3.3.4
+  features:
+    - Actuator Monitoring
+    - Swagger UI Documentation
+    - Spring Boot Admin Integration
+    - Development Tools
+  build:
+    artifact: my-service
+    group: com.example
