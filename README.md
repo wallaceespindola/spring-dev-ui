@@ -1,4 +1,4 @@
-![Spring](src/main/resources/static/images/spring-logo.png)
+![spring-logo](resources/images/logo-spring.png)
 
 # Multi-Framework Development UI Demo
 
@@ -199,7 +199,7 @@ java -jar target/quarkus-app/quarkus-run.jar
 - **DZone Articles:** [DZone Profile](https://dzone.com/users/1254611/wallacese.html)
 - **Pulse Articles:** [LinkedIn Articles](https://www.linkedin.com/in/wallaceespindola/recent-activity/articles/)
 - **Website:** [W-Tech IT Solutions](https://www.wtechitsolutions.com/)
-- **Presentation Slides:** [Speakerdeck](https://speakerdeck.com/wallacese)
+- **Slides:** [Speakerdeck](https://speakerdeck.com/wallacese)
 
 ## License
 
